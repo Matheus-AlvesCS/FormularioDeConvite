@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --input-bg: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+  --text-secondary: #c8cdd0;
+  --text-primary: #f9f9f9;
+
+  --font-baloo: "Baloo 2", sans-serif;
+  --text-head: 700 1.125rem/1.2 var(--font-baloo);
+  --text-body: 500 0.875rem "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #131516;
+  font: var(--text-body);
+  color: var(--text-secondary);
+}
