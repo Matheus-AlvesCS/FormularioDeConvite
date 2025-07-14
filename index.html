@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Formulário de Convite</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <header>
+          <img src="./assets/Logo.svg" alt="party-icon" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+      </aside>
+
+      <main>
+        <h1>Crie seu convite</h1>
+
+        <form enctype="multipart/form-data">
+          <fieldset class="event-info">
+            <legend>
+              <img src="./assets/icons/calendar.svg" alt="calendar-icon" />
+              Sobre o evento
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Nome do evento"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="start-date">Início</label>
+              <input type="datetime-local" id="start-date" name="start-date" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="end-date">Fim</label>
+              <input type="datetime-local" id="end-date" name="end-date" />
+            </div>
+
+            <div class="radio-wrapper">
+              <label for="event-type">Tipo</label>
+              <input
+                type="radio"
+                id="presential"
+                name="event-type"
+                value="presential"
+              />
+              <input
+                type="radio"
+                id="online"
+                name="event-type"
+                value="online"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="location">Local</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Link ou endereço"
+              />
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea
+                id="description"
+                name="description"
+                placeholder="Escreva os detalhes do evento"
+              ></textarea>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
