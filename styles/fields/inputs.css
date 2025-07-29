@@ -1,0 +1,101 @@
+.input-wrapper {
+  & > label {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  & input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    outline: none;
+    color: var(--text-primary);
+    font-size: 1rem;
+
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: #59b2ff;
+    }
+  }
+
+  & input[type="datetime-local"] {
+    color: var(--input-placeholder);
+    text-transform: uppercase;
+
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+  }
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  .radio-box {
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    height: 100%;
+  }
+
+  .radio-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    flex: 1;
+    position: relative;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      inset: 0;
+      cursor: pointer;
+    }
+
+    &:has(input:checked) {
+      background-color: #2d3136;
+      border-radius: 0.5rem;
+
+      & label {
+        font: 600 0.875rem "Open Sans", sans-serif;
+        color: var(--text-primary);
+      }
+
+      &:has([id="presential"]) .radio-img {
+        background-image: url(../../assets/icons/building-active.svg);
+      }
+
+      &:has([id="online"]) .radio-img {
+        background-image: url(../../assets/icons/video-active.svg);
+      }
+    }
+
+    .radio-img {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    &:has([id="presential"]) .radio-img {
+      background-image: url(../../assets/icons/building.svg);
+    }
+
+    &:has([id="online"]) .radio-img {
+      background-image: url(../../assets/icons/video.svg);
+    }
+  }
+}

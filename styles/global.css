@@ -12,7 +12,7 @@
   --text-primary: #f9f9f9;
 
   --font-baloo: "Baloo 2", sans-serif;
-  --text-head: 700 1.125rem/1.2 var(--font-baloo);
+  --text-head: 700 1.125rem var(--font-baloo);
   --text-body: 500 0.875rem "Open Sans", sans-serif;
 }
 
@@ -25,4 +25,8 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.grid {
+  display: grid;
 }

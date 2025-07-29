@@ -1,0 +1,28 @@
+.textarea-wrapper {
+  & > label {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+
+  textarea {
+    width: 100%;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem;
+    font: 500 1rem "Open Sans", sans-serif;
+    color: var(--text-primary);
+    height: 8.5rem;
+    resize: vertical;
+
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+
+    &:hover,
+    &:focus {
+      border-color: #59b2ff;
+    }
+  }
+}

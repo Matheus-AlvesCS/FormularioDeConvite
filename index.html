@@ -48,44 +48,57 @@
                 />
               </div>
 
-              <div class="input-wrapper">
-                <label for="start-date">Início</label>
-                <input
-                  type="datetime-local"
-                  id="start-date"
-                  name="start-date"
-                />
-              </div>
+              <div class="grid">
+                <div class="input-wrapper flex-1">
+                  <label for="start-date">Início</label>
+                  <input
+                    type="datetime-local"
+                    id="start-date"
+                    name="start-date"
+                  />
+                </div>
 
-              <div class="input-wrapper">
-                <label for="end-date">Fim</label>
-                <input type="datetime-local" id="end-date" name="end-date" />
-              </div>
+                <div class="input-wrapper flex-1">
+                  <label for="end-date">Fim</label>
+                  <input type="datetime-local" id="end-date" name="end-date" />
+                </div>
 
-              <div class="radio-wrapper">
-                <label for="event-type">Tipo</label>
-                <input
-                  type="radio"
-                  id="presential"
-                  name="event-type"
-                  value="presential"
-                />
-                <input
-                  type="radio"
-                  id="online"
-                  name="event-type"
-                  value="online"
-                />
-              </div>
+                <div class="radio-wrapper">
+                  <label>Tipo</label>
+                  <div class="radio-box">
+                    <div class="radio-inner">
+                      <div class="radio-img"></div>
+                      <label for="presential">Presencial</label>
+                      <input
+                        type="radio"
+                        id="presential"
+                        name="event-type"
+                        value="presential"
+                      />
+                    </div>
 
-              <div class="input-wrapper">
-                <label for="location">Local</label>
-                <input
-                  type="text"
-                  id="location"
-                  name="location"
-                  placeholder="Link ou endereço"
-                />
+                    <div class="radio-inner">
+                      <div class="radio-img"></div>
+                      <label for="online">Online</label>
+                      <input
+                        type="radio"
+                        id="online"
+                        name="event-type"
+                        value="online"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="location">Local</label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
               </div>
 
               <div class="textarea-wrapper">
