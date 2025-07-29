@@ -1,0 +1,45 @@
+.theme-wrapper {
+  & > label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .themes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+    gap: 0.5rem;
+  }
+
+  .theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.25rem 0.5rem;
+    background-color: #2d3136;
+    outline: 1px solid #363b40;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    position: relative;
+
+    label {
+      color: var(--text-primary);
+    }
+
+    input {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:has(input:hover) {
+      background-color: #383d42;
+    }
+
+    &:has(input:checked) {
+      border-color: #59b2ff;
+    }
+  }
+}
