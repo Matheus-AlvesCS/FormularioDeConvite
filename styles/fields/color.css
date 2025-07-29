@@ -1,0 +1,73 @@
+.color-wrapper {
+  label {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  & > div {
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+
+    input {
+      all: unset;
+      height: 2rem;
+      width: 2rem;
+      border: 0.375rem solid #2d3136;
+      border-radius: 50%;
+      background-color: #131516;
+      cursor: pointer;
+
+      &:hover {
+        border-color: #383d42;
+      }
+
+      &:checked {
+        outline: 2px solid #59b2ff;
+      }
+    }
+
+    #brand-light {
+      background-color: #59b2ff;
+    }
+
+    #navy {
+      background-color: #6a59ff;
+    }
+
+    #purple {
+      background-color: #b259ff;
+    }
+
+    #pink {
+      background-color: #ff59f9;
+    }
+
+    #fuschia {
+      background-color: #ff598b;
+    }
+
+    #danger {
+      background-color: #ff5959;
+    }
+
+    #orange {
+      background-color: #ff8b59;
+    }
+
+    #yellow {
+      background-color: #ffcd59;
+    }
+
+    #lime {
+      background-color: #e1ff59;
+    }
+
+    #green {
+      background-color: #59ff91;
+    }
+
+    #cyan {
+      background-color: #59fff9;
+    }
+  }
+}

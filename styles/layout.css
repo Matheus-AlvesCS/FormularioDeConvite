@@ -34,7 +34,7 @@
     background-color: #212427;
     border-radius: 0.75rem;
     padding-block: 5rem;
-    overflow: auto;
+    overflow-y: auto;
 
     & .main-container {
       width: 90%;
@@ -47,9 +47,11 @@
       font: 700 1.75rem var(--font-baloo);
     }
 
-    & .grid {
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+    & .event-info {
+      & .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
     }
   }
 }
