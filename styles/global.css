@@ -30,3 +30,7 @@ img {
 .grid {
   display: grid;
 }
+
+.flex {
+  display: flex;
+}

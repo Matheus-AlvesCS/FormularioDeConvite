@@ -1,0 +1,40 @@
+.cover {
+  flex: 2;
+
+  & > label {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.input-file-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  & > label {
+    background-color: #2d3136;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+
+  & .file-name {
+    color: #869198;
+    font-size: 1rem;
+  }
+}
