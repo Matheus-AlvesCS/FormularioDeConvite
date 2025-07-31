@@ -239,6 +239,75 @@
                   </div>
                 </div>
               </div>
+
+              <div class="flex">
+                <div class="style">
+                  <label>Estilo</label>
+                  <div class="flex">
+                    <div class="switch-box">
+                      <input type="checkbox" name="style" id="switch" />
+                      <label for="switch" class="slider"></label>
+                    </div>
+                    <p>Escuro</p>
+                  </div>
+                </div>
+
+                <div class="cover">
+                  <label>Foto de capa</label>
+                  <div class="input-file-container">
+                    <input type="file" id="cover-img" name="cover-img" />
+                    <label for="cover-img">
+                      <img src="./assets/icons/upload.svg" alt="" />
+                      Selecionar
+                    </label>
+                    <span class="file-name">Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="contact-info">
+              <legend>
+                <img src="./assets/icons/contact.svg" alt="contact-icon" />
+                Dados para contato
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="name"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <img src="./assets/icons/circle-alert.svg" alt="alert-icon" />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+
+              <div class="grid">
+                <div class="input-wrapper">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="phone-number">Telefone</label>
+                  <input
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="(99) 99999-9999 "
+                  />
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>

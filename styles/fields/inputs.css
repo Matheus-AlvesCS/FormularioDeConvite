@@ -34,6 +34,27 @@
       -webkit-appearance: none;
     }
   }
+
+  & input:required {
+    border-color: #ff5959;
+
+    &:not(:invalid) {
+      border-color: var(--input-stroke);
+
+      & + .error {
+        display: none;
+      }
+    }
+  }
+
+  & input + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    color: #ff5959;
+    font-size: 0.75rem;
+  }
 }
 
 .radio-wrapper {

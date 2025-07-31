@@ -47,7 +47,8 @@
       font: 700 1.75rem var(--font-baloo);
     }
 
-    & .event-info {
+    & .event-info,
+    .contact-info {
       & .grid {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
